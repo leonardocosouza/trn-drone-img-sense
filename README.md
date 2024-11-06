@@ -88,8 +88,25 @@ No terminal, execute o comando abaixo:
 ```
 git clone https://github.com/leonardocosouza/trn-drone-img-sense.git
 ```
-Acesse o Diretório Clonado:
+**4. Acesse o Diretório Clonado:**
 ```
 cd trn-drone-img-sense
 ```
 
+## Executando o Docker Compose e Verificando os Contêineres
+
+Inicie os Contêineres com Docker Compose
+
+Execute o comando abaixo para iniciar todos os contêineres definidos no docker-compose.yml:
+````
+docker-compose up -d
+````
+O argumento -d faz com que o Docker Compose execute os contêineres em segundo plano (modo detached).
+
+Para listar todos os contêineres em execução, use:
+```
+docker ps
+```
+![Dockerps.png](docs%2FDockerps.png)
+
+**Observação: O contêiner minio-mc é responsável por criar os buckets no MinIO e, em seguida, se torna indisponível.**
