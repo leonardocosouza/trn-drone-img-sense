@@ -60,6 +60,22 @@ docker run hello-world
 ```
 Esse comando irá baixar e executar uma imagem de teste do Docker. Se a instalação estiver correta, você verá uma mensagem de boas-vindas do Docker.
 
+## Criando uma Regra de Firewall no Google Cloud para Liberar a Porta
+
+RTMP: 1935
+MINIO: 9001
+NIFI: 9443
+
+**1. Acesse o Console de Rede do Google Cloud**
+No Google Cloud Console, navegue até a seção de Firewall:
+No menu de navegação, vá para VPC Network > Firewall rules.
+
+**2. Crie uma Nova Regra de Firewall**
+Clique em Create firewall rule para iniciar a criação de uma nova regra.
+
+Preencha os campos da seguinte maneira:
+
+![/docs/Firewall.png](docs%2FFirewall.png)
 
 ## Clonando um Repositório Git
 Este guia descreve os passos para clonar o repositório Git na VM.
@@ -107,6 +123,6 @@ Para listar todos os contêineres em execução, use:
 ```
 docker ps
 ```
-![Dockerps.png](docs%2FDockerps.png)
+![/docks/Dockerps.png](docs%2FDockerps.png)
 
 **Observação: O contêiner minio-mc é responsável por criar os buckets no MinIO e, em seguida, se torna indisponível.**
