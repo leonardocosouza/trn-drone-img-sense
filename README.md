@@ -1,4 +1,4 @@
-# eVTOLs - Electric Vertical Take-Off and Landing - Quem estará no Controle?
+# Drones - Classificação de Imagens
 
 
 ![/docs/capa.png](docs%2Fcapa.png)
@@ -26,7 +26,7 @@ docker ps
 **Observação: O contêiner minio-mc é responsável por criar os buckets no MinIO e, em seguida, se torna indisponível.**
 
 
-# Configuração do App DJI Fly
+## Configuração do App DJI Fly
 
 <p align="left">
   <img src="/docs/Screenshot_20241106_201650.jpg" width="700">
