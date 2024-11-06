@@ -26,14 +26,13 @@ docker ps
 **Observação: O contêiner minio-mc é responsável por criar os buckets no MinIO e, em seguida, se torna indisponível.**
 
 
-Configuração do App DJI Fly
-
-
-
-![/docs/Screenshot_20241106_201621.jpg](docs%2FScreenshot_20241106_201621.jpg)
-
-![/docs/Screenshot_20241106_201641.jpg](docs%2FScreenshot_20241106_201641.jpg)
+# Configuração do App DJI Fly
 
 ![/docs/Screenshot_20241106_201650.jpg](docs%2FScreenshot_20241106_201650.jpg)
 
 ![/docs/Screenshot_20241106_201657.jpg](docs%2FScreenshot_20241106_201657.jpg)
+
+![/docs/Screenshot_20241106_201641.jpg](docs%2FScreenshot_20241106_201641.jpg)
+
+![/docs/Screenshot_20241106_201621.jpg](docs%2FScreenshot_20241106_201621.jpg)
+
