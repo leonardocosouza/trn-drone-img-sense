@@ -14,4 +14,4 @@ Clique em Create firewall rule para iniciar a criação de uma nova regra.
 
 Preencha os campos da seguinte maneira:
 
-![/docs/Firewall.png](docs%2FFirewall.png)
+![/docs/Firewall.png](Firewall.png)
