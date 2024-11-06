@@ -1,7 +1,7 @@
 # eVTOLs - Electric Vertical Take-Off and Landing - Quem estará no Controle?
 
 
-![capa.png](docs%2Fcapa.png)
+![/docs/capa.png](docs%2Fcapa.png)
 
 
 ## Instalação do Docker em uma VM Ubuntu no Google Cloud
