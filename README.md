@@ -28,6 +28,10 @@ docker ps
 
 # Configuração do App DJI Fly
 
+<p align="center">
+  <img src="/docs/Screenshot_20241106_201650.jpg" width="300" alt="Descrição da imagem">
+</p>
+
 ![/docs/Screenshot_20241106_201650.jpg](docs%2FScreenshot_20241106_201650.jpg)
 
 ![/docs/Screenshot_20241106_201657.jpg](docs%2FScreenshot_20241106_201657.jpg)
