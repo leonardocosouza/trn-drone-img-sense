@@ -36,19 +36,15 @@ docker ps
   <img src="/docs/Screenshot_20241106_201657.jpg" width="700">
 </p>
 
-<p align="center">
-  <img src="/docs/Screenshot_20241106_201641.jpg" width="700">
-</p>
-
+**Adicine o IP Externo da VM**
 <p align="center">
   <img src="/docs/Screenshot_20241106_201621.jpg" width="700">
 </p>
 
-![/docs/Screenshot_20241106_201650.jpg](docs%2FScreenshot_20241106_201650.jpg)
+**Clique em "Iniciar"**
 
-![/docs/Screenshot_20241106_201657.jpg](docs%2FScreenshot_20241106_201657.jpg)
+<p align="center">
+  <img src="/docs/Screenshot_20241106_201641.jpg" width="700">
+</p>
 
-![/docs/Screenshot_20241106_201641.jpg](docs%2FScreenshot_20241106_201641.jpg)
-
-![/docs/Screenshot_20241106_201621.jpg](docs%2FScreenshot_20241106_201621.jpg)
 
