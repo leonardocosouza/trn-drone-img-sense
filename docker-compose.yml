@@ -19,8 +19,8 @@ services:
       - ./nifi/properties:/opt/nifi/nifi-current/properties
     environment:
       NIFI_WEB_HTTPS_PORT: 8443
-      SINGLE_USER_CREDENTIALS_USERNAME: admin
-      SINGLE_USER_CREDENTIALS_PASSWORD: 123456789012
+      SINGLE_USER_CREDENTIALS_USERNAME: nifi
+      SINGLE_USER_CREDENTIALS_PASSWORD: apachenifi123
     networks:
       - network
 
@@ -33,9 +33,8 @@ services:
     ports:
       - '5432:5432'
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: hive_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
     networks:
       - network
 
