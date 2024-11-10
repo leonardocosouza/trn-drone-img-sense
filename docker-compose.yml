@@ -8,11 +8,11 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '4'  # Limita o uso de CPU
-          memory: 3G  # Limita o uso de memória
+          cpus: '1'  # Limita o uso de CPU
+          memory: 1G  # Limita o uso de memória
         reservations:
-          cpus: '2'  # Reserva pelo menos
-          memory: 2G  # Reserva pelo menos
+          cpus: '1'  # Reserva pelo menos
+          memory: 1G  # Reserva pelo menos
     volumes:
       - ./jar:/opt/jar
       - ./output:/tmp/input
@@ -59,6 +59,8 @@ services:
     container_name: minio-mc
     depends_on:
       - minio
+    ports:
+      - "1977:1977"
     entrypoint: |
       sh -c "
       sleep 10 &&
@@ -85,19 +87,29 @@ services:
     networks:
       - network
 
-  spark:
-    image: bitnami/spark
-    container_name: spark
-    environment:
-      - SPARK_MODE=master
+  jupyter:
+    image: yolov7-jupyter
+    container_name: jupyter
     ports:
-      - "8081:8080"
+      - "8816:8816"
     volumes:
-      - ./app:/opt/spark-apps
-    depends_on:
-      - minio
+      - ./jupyter/notebook:/yolov7/notebook  # Monta o diretório atual para persistir os notebooks
+    environment:
+      - JUPYTER_ENABLE_LAB=yes         # Ativa o JupyterLab
+#    ulimits:
+#      nofile:
+#        soft: 65536
+#        hard: 65536
+#    deploy:
+#      resources:
+#        limits:
+#          cpus: '13'  # Limita o uso de CPU
+#          memory: 30G  # Limita o uso de memória
+#        reservations:
+#          cpus: '10'  # Reserva pelo menos
+#          memory: 27G  # Reserva pelo menos
     networks:
-      - network
+       - network
 
 volumes:
   minio-data:
