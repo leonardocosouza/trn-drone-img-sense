@@ -8,11 +8,11 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '1'  # Limita o uso de CPU
-          memory: 1G  # Limita o uso de memória
+          cpus: '7'  # Limita o uso de CPU
+          memory: 15G  # Limita o uso de memória
         reservations:
-          cpus: '1'  # Reserva pelo menos
-          memory: 1G  # Reserva pelo menos
+          cpus: '5'  # Reserva pelo menos
+          memory: 10G  # Reserva pelo menos
     volumes:
       - ./jar:/opt/jar
       - ./output:/tmp/input
@@ -92,6 +92,7 @@ services:
     container_name: jupyter
     ports:
       - "8816:8816"
+      - "22:22"
     volumes:
       - ./jupyter/notebook:/yolov7/notebook  # Monta o diretório atual para persistir os notebooks
     environment:

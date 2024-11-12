@@ -1,6 +1,7 @@
 # Drones - Classificação de Imagens
 
 
+
 ![/docs/capa.png](docs%2Fcapa.png)
 
 ### Requisitos
@@ -48,3 +49,18 @@ sudo docker ps
   <img src="/docs/Screenshot_20241106_201641.jpg" width="700">
 </p>
 
+Nifi
+apt update
+apt install openssh-server
+apt install sshpass
+apt install expect -y
+
+saber o diretorio 
+which sshpass
+
+comando
+/usr/bin/sshpass
+
+
+argumentos
+sshpass -p 'password' ssh -o StrictHostKeyChecking=no nifi@jupyter 'python3 /yolov7/notebook/process_video.py'
