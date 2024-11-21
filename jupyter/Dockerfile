@@ -39,4 +39,4 @@ EXPOSE 8816
 # Iniciar o servidor SSH e o Jupyter Notebook
 CMD sh -c "/usr/sbin/sshd -D & jupyter notebook --ip=0.0.0.0 --port=8816 --no-browser --allow-root --NotebookApp.disable_check_xsrf=True"
 
-#docker build -t yolov7-jupyter .
+#docker build -t yolo-custom .

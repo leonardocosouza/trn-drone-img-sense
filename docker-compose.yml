@@ -1,6 +1,6 @@
 services:
   nifi:
-    image: apache/nifi:2.0.0-M4
+    image: nifi-custom
     container_name: nifi
     hostname: nifi
     ports:
@@ -80,7 +80,7 @@ services:
       - network
 
   jupyter:
-    image: yolov7-jupyter
+    image: yolo-custom
     container_name: jupyter
     ports:
       - "8816:8816"
