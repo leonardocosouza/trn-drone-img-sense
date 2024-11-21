@@ -49,6 +49,10 @@ sudo docker ps
   <img src="/docs/Screenshot_20241106_201641.jpg" width="700">
 </p>
 
+
+#NGINX
+#Alterar o arquivo nginx.conf para o ip externo do GCP
+
 #RTMP
 #chmod 777 /tmp/output
 
