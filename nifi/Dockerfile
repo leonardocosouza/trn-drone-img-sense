@@ -19,9 +19,6 @@ COPY ssh_expect.sh /tmp/ssh_expect.sh
 # Make the script executable
 RUN chmod +x /tmp/ssh_expect.sh
 
-# Expose SSH port (optional, if SSH access is needed)
-EXPOSE 22
-
 # Switch back to nifi user
 USER nifi
 

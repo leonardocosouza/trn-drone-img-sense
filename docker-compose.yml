@@ -84,7 +84,7 @@ services:
     container_name: jupyter
     ports:
       - "8816:8816"
-      - "22:22"
+      - "2222:2222"
     volumes:
       - ./jupyter/notebook:/yolov7/notebook  # Monta o diretório atual para persistir os notebooks
     environment:

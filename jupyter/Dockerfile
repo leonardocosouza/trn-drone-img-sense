@@ -20,7 +20,7 @@ RUN useradd -ms /bin/bash nifi && echo "nifi:password" | chpasswd  # Substitua a
 RUN echo "nifi ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 # Expor a porta para SSH
-EXPOSE 22
+EXPOSE 2222
 
 # Clona o YOLOv7 e instala as dependências
 RUN git clone https://github.com/WongKinYiu/yolov7.git
