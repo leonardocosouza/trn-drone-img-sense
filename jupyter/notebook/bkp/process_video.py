@@ -22,7 +22,7 @@ minio_client = Minio(
 )
 
 # Caminho do modelo YOLO local
-model_path = "yolov8n.pt"
+model_path = "../yolov8n.pt"
 
 # Baixe o modelo apenas se ele não existir localmente
 if not os.path.exists(model_path):

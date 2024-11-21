@@ -51,9 +51,12 @@ sudo docker ps
 
 Nifi
 apt update
-apt install openssh-server
+apt install openssh-server -y
 apt install sshpass
 apt install expect -y
+
+/tmp/ssh_expect.sh
+chmod +x ssh_expect.sh
 
 saber o diretorio 
 which sshpass
