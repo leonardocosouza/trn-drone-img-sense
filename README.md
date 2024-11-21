@@ -49,20 +49,12 @@ sudo docker ps
   <img src="/docs/Screenshot_20241106_201641.jpg" width="700">
 </p>
 
-Nifi
-apt update
-apt install openssh-server -y
-apt install sshpass
-apt install expect -y
+#RTMP
+#chmod 777 /tmp/output
 
-/tmp/ssh_expect.sh
-chmod +x ssh_expect.sh
-
-saber o diretorio 
-which sshpass
-
-comando
-/usr/bin/sshpass
+#GCP
+#sudo nano /etc/hosts
+#https://nifi:8443/nifi
 
 
 argumentos

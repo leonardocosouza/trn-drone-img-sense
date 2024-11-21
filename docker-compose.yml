@@ -16,6 +16,7 @@ services:
     networks:
       - network
 
+
   postgres:
     image: 'postgres:latest'
     hostname: postgres
@@ -78,6 +79,8 @@ services:
       - ./output:/tmp/output
     networks:
       - network
+
+
 
   jupyter:
     image: yolo-custom

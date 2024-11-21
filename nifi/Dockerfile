@@ -14,10 +14,12 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy the ssh_expect.sh script to the container
-COPY ssh_expect.sh /tmp/ssh_expect.sh
+COPY ssh_expect_process_jpg.sh /tmp/ssh_expect_process_jpg.sh
+COPY ssh_expect_process_video.sh /tmp/ssh_expect_process_video.sh
 
 # Make the script executable
-RUN chmod +x /tmp/ssh_expect.sh
+RUN chmod +x /tmp/ssh_expect_process_jpg.sh
+RUN chmod +x /tmp/ssh_expect_process_video.sh
 
 # Switch back to nifi user
 USER nifi
