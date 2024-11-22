@@ -1,7 +1,6 @@
 # Drones - Classificação de Imagens
 
 
-
 ![/docs/capa.png](docs%2Fcapa.png)
 
 ### Requisitos
